@@ -73,8 +73,7 @@ textarea:active {
 }
 input:focus {
   outline:none;
-  box-shadow:none
-}
+  box-shadow:none}
 img:not([draggable]),
 embed,
 object,
@@ -20719,7 +20718,7 @@ span.select2-selection.select2-selection--single:focus {
 .category-list .icon-btn i {
   margin-left:-8px
 }
-.category-list_title{
+.category-list_title {
   font-size:17px;
   font-weight:600;
   margin-top:-0.23em;
@@ -20727,7 +20726,7 @@ span.select2-selection.select2-selection--single:focus {
   -webkit-transition:0.4s ease-in-out;
   transition:0.4s ease-in-out;
   line-height: 1.260;
-  color: #2974FF;
+  color: #25D366;
 }
 .category-list_title a {
   color:inherit;
