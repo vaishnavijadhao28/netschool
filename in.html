@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <div class="context">
+        <h1>Pure Css Animated Background</h1>
+    </div>
+
+
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+  <article>
+    <section>
+      <div>
+        <h2>Shakes</h2>
+        <p>Rejecting</p>
+      </div>
+      <div>
+        <button anim="shake">CLICK ME</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Pulse</h2>
+        <p>Partying</p>
+      </div>
+      <div>
+        <button anim="pulse">CLICK ME</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Glitch</h2>
+        <p>Hacking</p>
+      </div>
+      <div>
+        <button anim="glitch">CLICK ME</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Turn</h2>
+        <p>Flipping</p>
+      </div>
+      <div>
+        <button anim="flip">CLICK ME</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Fill</h2>
+        <p>Loading</p>
+      </div>
+      <div>
+        <button anim="fill">Click me</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Sheen</h2>
+        <p>Shining</p>
+      </div>
+      <div>
+        <button anim="sheen">Click me</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Emphasize</h2>
+        <p>Glowing</p>
+      </div>
+      <div>
+        <button anim="glow">Click me</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Blur</h2>
+        <p>Censoring</p>
+      </div>
+      <div>
+        <button anim="blur">CLICK ME</button>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Tony Hawk</h2>
+        <p>900-ing</p>
+      </div>
+      <div>
+        <button anim="tonyhawk">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Shakes</h2>
+        <p>Rejecting</p>
+      </div>
+      <div>
+        <button anim="shake">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Pulse</h2>
+        <p>Partying</p>
+      </div>
+      <div>
+        <button anim="pulse">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Glitch</h2>
+        <p>Hacking</p>
+      </div>
+      <div>
+        <button anim="glitch">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Turn</h2>
+        <p>Flipping</p>
+      </div>
+      <div>
+        <button anim="flip">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Fill</h2>
+        <p>Loading</p>
+      </div>
+      <div>
+        <button anim="fill">Click me</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Sheen</h2>
+        <p>Shining</p>
+      </div>
+      <div>
+        <button anim="sheen">Click me</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Emphasize</h2>
+        <p>Glowing</p>
+      </div>
+      <div>
+        <button anim="glow">Click me</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Blur</h2>
+        <p>Censoring</p>
+      </div>
+      <div>
+        <button anim="blur">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <article>
+    <section>
+      <div>
+        <h2>Tony Hawk</h2>
+        <p>900-ing</p>
+      </div>
+      <div>
+        <button anim="tonyhawk">CLICK ME</button>
+      </div>
+    </section>
+  </article>
+  <div class="ring">Loading
+  <span></span>
+</div>
+<h1 class="zoomInUp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eaque aut, iusto esse ullam harum nulla facere doloribus recusandae nemo libero tenetur quisquam laborum? Incidunt perspiciatis eveniet nemo dolor assumenda?</h1>
+  <script>
+  let anims = [...document.querySelectorAll("[anim]")];
+console.log(anims);
+let click = (el, cb) => el.addEventListener("click", cb);
+let toggle = (el) => el.classList.toggle("toggled");
+let clickTog = (el) => click(el, () => toggle(el));
+anims.map(clickTog);
+
+const app = new Vue({
+  el: '#app',
+  data: {
+    animations: [
+      "bounce",
+      "flash",
+      "pulse",
+      "rubberBand",
+      "shake",
+      "headShake",
+      "swing",
+      "tada",
+      "wobble",
+      "jello",
+      "bounceIn",
+      "bounceInDown",
+      "bounceInLeft",
+      "bounceInRight",
+      "bounceInUp",
+      "bounceOut",
+      "bounceOutDown",
+      "bounceOutLeft",
+      "bounceOutRight",
+      "bounceOutUp",
+      "fadeIn",
+      "fadeInDown",
+      "fadeInDownBig",
+      "fadeInLeft",
+      "fadeInLeftBig",
+      "fadeInRight",
+      "fadeInRightBig",
+      "fadeInUp",
+      "fadeInUpBig",
+      "fadeOut",
+      "fadeOutDown",
+      "fadeOutDownBig",
+      "fadeOutLeft",
+      "fadeOutLeftBig",
+      "fadeOutRight",
+      "fadeOutRightBig",
+      "fadeOutUp",
+      "fadeOutUpBig",
+      "flipInX",
+      "flipInY",
+      "flipOutX",
+      "flipOutY",
+      "lightSpeedIn",
+      "lightSpeedOut",
+      "rotateIn",
+      "rotateInDownLeft",
+      "rotateInDownRight",
+      "rotateInUpLeft",
+      "rotateInUpRight",
+      "rotateOut",
+      "rotateOutDownLeft",
+      "rotateOutDownRight",
+      "rotateOutUpLeft",
+      "rotateOutUpRight",
+      "hinge",
+      "jackInTheBox",
+      "rollIn",
+      "rollOut",
+      "zoomIn",
+      "zoomInDown",
+      "zoomInLeft",
+      "zoomInRight",
+      "zoomInUp",
+      "zoomOut",
+      "zoomOutDown",
+      "zoomOutLeft",
+      "zoomOutRight",
+      "zoomOutUp",
+      "slideInDown",
+      "slideInLeft",
+      "slideInRight",
+      "slideInUp",
+      "slideOutDown",
+      "slideOutLeft",
+      "slideOutRight",
+      "slideOutUp",
+      "heartBeat"
+    ],
+    selectedAnimation: "bounce"
+  },
+  
+  computed: {
+    boxClass: function() {
+      if(this.isBoxActive === true) {
+        return [
+          "animated", "infinite", this.selectedAnimation
+        ];
+      } 
+    },
+    buttonValue: function() {
+      return this.isBoxActive ? "Stop" : "Start"
+    }
+  },
+  
+  methods: {
+    moveBox: function() {
+      this.isBoxActive = !this.isBoxActive;
+    }
+  }
+});
+</script>
+</body>
+</html>

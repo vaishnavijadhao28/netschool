@@ -25547,8 +25547,7 @@ content: '';
   .header-layout7 .top-left {
   padding-left: 16px;
 }
-  .header-layout7 .top-left p
-{
+  .header-layout7 .top-left p{
     margin: 10px 10px;
     font-size: 12px;
     width: 249px;
@@ -25570,7 +25569,7 @@ content: '';
    .header-layout7 .header-logo img {
     padding:0 0px;
     width: 75px !important;
-    margin-top: -140px;
+    margin-top: -117px;
     height: 75px;
     margin-left: -40px;
   }
