@@ -10791,9 +10791,15 @@ table.woocommerce-product-attributes {
   transition:all ease 0.4s;
 }
 .th-product .product-title{
-  font-size:20px;
-  margin:10px 10px 7px 10px;
+  font-size:25px;
+  margin:10px 10px 0 10px;
   color: #021e4a;
+}
+.pro-sub {
+font-size:16px;
+  margin:0 0 10px;
+  color: #031a3f;
+font-weight: 500;
 }
 .th-product .product-title a {
   color:inherit
